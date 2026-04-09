@@ -138,13 +138,20 @@ function handleSubmit(event) {
 }
 
 function selectPlayer(n) {
-  document.getElementById("playerNumber").value = n;
-  document.querySelectorAll(".player-btn").forEach(b => b.classList.remove("selected"));
-  event.target.classList.add("selected");
+    document.getElementById("playerNumber").value = n;
+    document.querySelectorAll(".player-btn").forEach(b => b.classList.remove("selected"));
+    event.target.classList.add("selected");
 }
 
 function selectCategory(c) {
     document.getElementById("category").value = c;
     document.querySelectorAll(".category-btn").forEach(b => b.classList.remove("selected"));
     event.target.classList.add("selected");
+}
+
+function handleDone() {
+    const seed = document.getElementById("seed").value;
+    const imposter = seededHash(seed, 4);
+
+    document.getElementById("imposterReveal").textContent = `The imposter was Player ${imposter + 1}`;
 }
