@@ -1,0 +1,26 @@
+body {
+  background: #1a1a1a;
+  color: #eee;
+  font-family: sans-serif;
+  padding: 40px;
+}
+
+input {
+  background: #333;
+  border: 1px solid #555;
+  color: #eee;
+  padding: 4px 8px;
+  margin: 0 8px;
+}
+
+input[type="submit"] {
+  background: #8b0000;
+  border-color: #8b0000;
+  cursor: pointer;
+  padding: 4px 12px;
+}
+
+#output {
+  margin-top: 24px;
+  font-size: 1.4em;
+}
