@@ -44,3 +44,22 @@ input[type="submit"] {
   background: #8b0000;
   border-color: #8b0000;
 }
+
+#categorySelect {
+    display: inline-flex;
+    gap: 8px;
+    margin: 0 8px;
+}
+
+.category-btn {
+    background: #333;
+    border: 1px solid #555;
+    color: #eee;
+    padding: 4px 12px;
+    cursor: pointer;
+}
+
+.category-btn.selected {
+    background: #8b0000;
+    border-color: #8b0000;
+}

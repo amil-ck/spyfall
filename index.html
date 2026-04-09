@@ -3,6 +3,15 @@
 <link rel="stylesheet" href="style.css">
 
 <form onsubmit="handleSubmit(event)">
+    Choose Category:
+    <div id="categorySelect">
+        <div class="category-btn" onclick="selectCategory('locations')">Locations</div>
+        <div class="category-btn" onclick="selectCategory('animals')">Animals</div>
+        <div class="category-btn" onclick="selectCategory('countries')">Countries</div>
+    </div>
+    <input type="hidden" id="category" value="" />
+    <br><br>
+
     Enter Player Number:
     <div id="playerSelect">
         <div class="player-btn" onclick="selectPlayer(1)">1</div>
