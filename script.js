@@ -69,7 +69,7 @@ const locations = [
 function handleSubmit(event) {
     event.preventDefault(); // stops the page from reloading
 
-    const playerNumber = document.getElementById("playerNumber").value;
+    const playerNumber = document.getElementById("playerNumber").value - 1;
     const seed = document.getElementById("seed").value;
 
     const imposter = seededHash(seed, 4);
@@ -83,4 +83,10 @@ function handleSubmit(event) {
 
     const location = playerNumber == imposter ? value2 : value;
     document.getElementById("output").textContent = location;
+}
+
+function selectPlayer(n) {
+  document.getElementById("playerNumber").value = n;
+  document.querySelectorAll(".player-btn").forEach(b => b.classList.remove("selected"));
+  event.target.classList.add("selected");
 }

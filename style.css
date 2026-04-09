@@ -24,3 +24,23 @@ input[type="submit"] {
   margin-top: 24px;
   font-size: 1.4em;
 }
+
+#playerSelect {
+  display: flex;
+  gap: 8px;
+  margin: 0 8px;
+  display: inline-flex;
+}
+
+.player-btn {
+  background: #333;
+  border: 1px solid #555;
+  color: #eee;
+  padding: 4px 12px;
+  cursor: pointer;
+}
+
+.player-btn.selected {
+  background: #8b0000;
+  border-color: #8b0000;
+}
